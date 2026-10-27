@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ccyx5jfox5kle"]
+
+[ext_resource type="Texture2D" uid="uid://d1l6c32b5ui1j" path="res://Imagens/mapas/mapa_hub_vista_de_cima.jpg" id="1_cu2wc"]
+
+[node name="Jogo" type="Node2D" unique_id=1901709563]
+
+[node name="MapaHubVistaDeCima" type="Sprite2D" parent="." unique_id=1715809551]
+position = Vector2(579.5, 292.00003)
+scale = Vector2(2.4752688, 2.29316)
+texture = ExtResource("1_cu2wc")
