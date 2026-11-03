@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://c5uu6fn6muo5y"]
 
+[ext_resource type="Texture2D" uid="uid://7bd8vf5s3mex" path="res://Imagens/tilesets/tiles_hub_piso_parede_portas_decoracao.jpg" id="1_wa04n"]
+[ext_resource type="PackedScene" uid="uid://dhewp3oaqqt4h" path="res://Cenas/player.tscn" id="2_tptu3"]
+
 [node name="Porta 2" type="Node2D" unique_id=633151410]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1756542596]
+texture = ExtResource("1_wa04n")
+
+[node name="Player" parent="." unique_id=1737979426 instance=ExtResource("2_tptu3")]

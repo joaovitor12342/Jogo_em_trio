@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cia7v4c6cw1cg" path="res://Cenas/menu.gd" id="1_u1n12"]
 [ext_resource type="Texture2D" uid="uid://btc8c8rcqx475" path="res://Imagens/tilesets/fundo_pedra_530px.jpg" id="2_u1n12"]
+[ext_resource type="Texture2D" uid="uid://yfkirymhs353" path="res://Imagens/itens_ui/Logo Pokémon Back com Poké Bola.png" id="3_vpgfy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fapvr"]
 bg_color = Color(0.06666667, 0.29411766, 0.5529412, 1)
@@ -26,9 +27,6 @@ corner_radius_top_left = 3
 corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vpgfy"]
-load_path = "res://.godot/imported/pokemon_back_logo_menor.png-3fcf8ae758d440c5d2904b3d45ca685f.ctex"
 
 [node name="Menu" type="Control" unique_id=2092138226]
 layout_mode = 3
@@ -69,10 +67,10 @@ theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_eheat")
 text = "Sair"
 
-[node name="PokemonBackLogoMenor" type="Sprite2D" parent="." unique_id=965605948]
-position = Vector2(580, 241.00002)
-scale = Vector2(1.3417969, 1.2769622)
-texture = SubResource("CompressedTexture2D_vpgfy")
+[node name="LogoPokémonBackComPokéBola" type="Sprite2D" parent="." unique_id=1796788658]
+position = Vector2(583, 207)
+scale = Vector2(0.71940106, 0.6152344)
+texture = ExtResource("3_vpgfy")
 
 [connection signal="pressed" from="VBoxContainer/Entrar" to="." method="_on_entrar_pressed"]
 [connection signal="pressed" from="VBoxContainer/Sair" to="." method="_on_sair_pressed"]

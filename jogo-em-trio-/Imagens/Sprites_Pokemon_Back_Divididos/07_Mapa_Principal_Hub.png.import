@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh1ww0gd04xp2"
-path="res://.godot/imported/Firefly_Gemini Flash_estou fazendo um jogo no godot e, preciso que você altere uma imagem. Deixe as imagen 356087.png-4f5a3db21ecc59d13731fd97d4b031f1.ctex"
+uid="uid://cr2sie23a0010"
+path="res://.godot/imported/07_Mapa_Principal_Hub.png-7cd3159e3247ac14e7818af99ce7ec8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Imagens/Firefly_Gemini Flash_estou fazendo um jogo no godot e, preciso que você altere uma imagem. Deixe as imagen 356087.png"
-dest_files=["res://.godot/imported/Firefly_Gemini Flash_estou fazendo um jogo no godot e, preciso que você altere uma imagem. Deixe as imagen 356087.png-4f5a3db21ecc59d13731fd97d4b031f1.ctex"]
+source_file="res://Imagens/Sprites_Pokemon_Back_Divididos/07_Mapa_Principal_Hub.png"
+dest_files=["res://.godot/imported/07_Mapa_Principal_Hub.png-7cd3159e3247ac14e7818af99ce7ec8b.ctex"]
 
 [params]
 

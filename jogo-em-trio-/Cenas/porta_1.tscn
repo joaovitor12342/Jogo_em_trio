@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://bsq5wc3cypse2"]
 
+[ext_resource type="Texture2D" uid="uid://oqth3wrryx4c" path="res://Imagens/tilesets/tileset_cenarios_fases.jpg" id="1_27cxp"]
+[ext_resource type="PackedScene" uid="uid://dhewp3oaqqt4h" path="res://Cenas/player.tscn" id="2_umbft"]
+
 [node name="Porta 1" type="Node2D" unique_id=750482261]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1647590003]
+texture = ExtResource("1_27cxp")
+
+[node name="Player" parent="." unique_id=1737979426 instance=ExtResource("2_umbft")]

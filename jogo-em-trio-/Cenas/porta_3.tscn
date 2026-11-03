@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://by1efwfloaqaa"]
 
+[ext_resource type="Texture2D" uid="uid://isa3mv3pm4a0" path="res://Imagens/tilesets/tiles_fases_plataformas_armadilhas.jpg" id="1_kvspt"]
+[ext_resource type="PackedScene" uid="uid://dhewp3oaqqt4h" path="res://Cenas/player.tscn" id="2_2bbrl"]
+
 [node name="Porta 3" type="Node2D" unique_id=116107567]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1304816856]
+texture = ExtResource("1_kvspt")
+
+[node name="Player" parent="." unique_id=1737979426 instance=ExtResource("2_2bbrl")]

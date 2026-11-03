@@ -1,10 +1,59 @@
 [gd_scene format=3 uid="uid://ccyx5jfox5kle"]
 
 [ext_resource type="Texture2D" uid="uid://d1l6c32b5ui1j" path="res://Imagens/mapas/mapa_hub_vista_de_cima.jpg" id="1_cu2wc"]
+[ext_resource type="PackedScene" uid="uid://dhewp3oaqqt4h" path="res://Cenas/player.tscn" id="2_wso6v"]
+[ext_resource type="Script" uid="uid://co27wiw3sbvjq" path="res://Cenas/player.gd" id="3_m2elh"]
 
-[node name="Jogo" type="Node2D" unique_id=1901709563]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r6ts2"]
+size = Vector2(94, 105)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_adnsi"]
+size = Vector2(79, 113)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l28u4"]
+size = Vector2(117, 162)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vvkx"]
+size = Vector2(140, 129)
+
+[node name="Jogo" type="Node2D" unique_id=1411339198]
+metadata/_edit_vertical_guides_ = [0.0, 1153.0]
+metadata/_edit_horizontal_guides_ = [651.0]
 
 [node name="MapaHubVistaDeCima" type="Sprite2D" parent="." unique_id=1715809551]
-position = Vector2(579.5, 292.00003)
-scale = Vector2(2.4752688, 2.29316)
+position = Vector2(573.99994, 296.99997)
+scale = Vector2(2.4989247, 2.325733)
 texture = ExtResource("1_cu2wc")
+
+[node name="Direta" type="Area2D" parent="." unique_id=1901142993]
+
+[node name="Colisão" type="CollisionShape2D" parent="Direta" unique_id=26955625]
+position = Vector2(1072, 268.5)
+shape = SubResource("RectangleShape2D_r6ts2")
+
+[node name="Esquerda" type="Area2D" parent="." unique_id=961251687]
+
+[node name="Colisão" type="CollisionShape2D" parent="Esquerda" unique_id=2091110200]
+position = Vector2(104.5, 272.5)
+shape = SubResource("RectangleShape2D_adnsi")
+
+[node name="Cima" type="Area2D" parent="." unique_id=301501170]
+
+[node name="Colisão" type="CollisionShape2D" parent="Cima" unique_id=421991503]
+position = Vector2(590.5, 108)
+shape = SubResource("RectangleShape2D_l28u4")
+
+[node name="Baixo" type="Area2D" parent="." unique_id=1042252043]
+
+[node name="Baixo" type="CollisionShape2D" parent="Baixo" unique_id=1302725013]
+position = Vector2(585, 539.5)
+shape = SubResource("RectangleShape2D_8vvkx")
+
+[node name="Player" parent="." unique_id=1482242104 instance=ExtResource("2_wso6v")]
+position = Vector2(589, 327)
+script = ExtResource("3_m2elh")
+
+[connection signal="area_shape_entered" from="Direta" to="Player" method="_on_direta_area_shape_entered"]
+[connection signal="area_shape_entered" from="Esquerda" to="Player" method="_on_esquerda_area_shape_entered"]
+[connection signal="area_shape_entered" from="Cima" to="Player" method="_on_cima_area_shape_entered"]
+[connection signal="area_shape_entered" from="Baixo" to="Player" method="_on_baixo_area_shape_entered"]

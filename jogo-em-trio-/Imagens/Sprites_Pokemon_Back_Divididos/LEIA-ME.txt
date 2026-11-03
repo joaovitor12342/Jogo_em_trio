@@ -1,0 +1,15 @@
+SPRITES POKEMON BACK — IMAGENS DIVIDIDAS
+
+01 Pikachu
+02 Inimigos
+03 Mewtwo (chefe)
+04 Tiles estáticos do Hub
+05 Tiles das fases de plataforma
+06 Itens e interface (UI)
+07 Mapa principal do Hub
+08 Tileset dos cenários
+09 Textura de fundo
+10 Logo Pokémon Back
+11 Efeitos extras
+
+Observação: são recortes das seções do catálogo. Os sprites individuais ainda precisam ser separados para uso como frames.
